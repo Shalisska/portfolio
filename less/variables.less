@@ -1,0 +1,74 @@
+//10rem = 16px; 1px=0.625
+@font-size__baze: 12.5px;
+@font-size: 1.6rem;
+@font-size__underline: 1.3rem;
+@font-size__caption: 1.8rem;
+@font-size__position: 1.9rem;
+
+
+@font-family: 'arial', sans-serif;
+
+@bg-header: #300;
+@bg-action: #831;
+@bg-active: #531500;
+@bg-active__line: #c63;
+@bg-main: #fffff0;
+@bg-title: #c96;
+
+@color-menu: #fff8dc;
+@color-main: #300000;
+@color-active: #c63;
+
+@border-color: #833500;
+@border-color--img: #a53;
+
+.reset-ul () {
+    list-style: none;
+    padding: 0;
+}
+
+.reset-a () {
+	text-decoration: none;
+	color: inherit;
+}
+
+.clearfix () {
+	&:after {
+		content:'';
+		display:table;
+		clear:both;
+	}
+}
+
+.table () {
+	margin: 2rem auto 4rem;
+    text-align: left;
+    box-shadow: 0 0 20px 2px #531500;
+	
+	th,
+	td {
+		padding: 0.5rem 15px;
+		border: 2px solid #833500;
+		vertical-align: top;
+	}
+}
+
+.text-underline () {
+	margin-top: 0;
+	font-style: italic;
+	font-size: @font-size__underline;
+}
+
+.checkbox () {
+	position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -1rem;
+    line-height: 2rem;
+    padding:0 20px 0;
+	
+	&:before {
+		content: '˅';
+    	font-size: 4rem;
+	}
+}

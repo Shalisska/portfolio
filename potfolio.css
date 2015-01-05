@@ -1,0 +1,327 @@
+html{
+    font-size: 12.5px; 
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;    
+    font-family: 'arial', sans-serif;
+    background: #330000;
+}
+div, p, input, a, ul, label, h3 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+label{
+    cursor: pointer;
+}
+.ul-reset{
+    list-style: none;
+    padding: 0;
+}
+.clearfix{
+    content:'';
+    display:table;
+    clear:both;
+}
+.layout-center-wrapper{
+    width: 940px;
+    margin: 0 auto;
+}
+.header,
+.footer{    
+    color: #FFF8DC;
+}
+.header a,
+.footer a{
+    color: #FFF8DC;
+}
+.top-menu{
+    font-size: 0;
+}
+.top-menu li,
+.bottom-menu li{
+    display: inline-block;
+    font-size: 1.6rem;
+}
+.top-menu a{
+    display: block;
+    padding: 2rem 20px;
+    text-decoration: none;
+}
+.top-menu a:not(.active):hover,
+.top-menu a:not(.active):active{
+    background: #883311;
+}
+.active a{
+    background: #531500;
+    box-shadow: inset 0 -5px #CC6633;
+}
+main{
+    color: #300000;
+    background: #FFFFF0;
+    padding:2.1rem 0 7rem;
+}
+main a{
+    color: #300000;
+    text-decoration: none;
+}
+main a:hover,
+main a:active,
+.footer a:hover,
+.footer a:active{
+    color: #CC6633;
+}
+.main-info h1{
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #833500;
+}
+.main-info-title{
+    position: relative;
+    text-align: center;
+    margin:5rem 0 0;
+    border-bottom: 2px solid #833500;
+}
+.main-info-title h2{
+    margin: 0;
+}
+.main-info>input,
+.main-info section>input{
+    display: none;
+}
+.main-info-title label,
+.info-title label{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -1rem;
+    line-height: 2rem;
+    padding:0 20px 0;
+}
+.info-title label:before,
+.main-info-title label:before{
+    content: '˅';
+    font-size: 4rem;
+}
+.main-info input:checked+.main-info-title label:before,
+.main-info section>input:checked+.info-title label:before{
+    content: '˄';
+}
+.main-info input:checked~.info-block,
+.main-info section>input:checked~.info{
+    display: none;
+}
+.main-info p{
+    margin: 0;
+}
+.main-info-title+p.main-info-under,
+.portfolio p.main-info-under{
+    padding: 0;
+    margin-bottom: 0;
+}
+.main-info .main-info-under{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+.main-info span{
+    font-weight: bold;
+}
+.main-info-table{
+    margin: 2rem auto 4rem;
+    text-align: left;
+    box-shadow: 0 0 20px 2px #531500;
+}
+.top-table{
+    margin-left: 0;
+    box-shadow: none;
+}
+.main-info-table caption{
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+.main-info-table th,
+.main-info-table td{
+    padding: 0.5rem 15px;
+    border: 2px solid #833500;
+    vertical-align: top;
+}
+.main-info-table ul{
+    margin: 0;
+}
+.position{
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.position p{
+    display: inline-block;
+}
+.position p:first-child{
+    text-decoration: underline;
+}
+.position p:last-child{
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+.info-title{
+    position: relative;
+    width: 100%;
+    background: #CC9966;
+    margin-top: 0.5rem;
+    padding: 0 20px;
+    border-bottom: 2px solid #833500;
+}
+.info-title h3{
+    float: left;
+}
+
+section p:first-child{
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
+.work p:nth-child(2){
+    font-weight: bold;
+}
+.info .main-info-under{
+    text-align: left;
+}
+section table{
+    width: 95%;
+}
+.work th{
+    width: 15%;
+}
+.education table{
+    text-align: center;
+}
+.education tr th:first-child,
+.education tr td:first-child,
+.skills th{
+    width: 20%;
+}
+.education table a p:first-child{
+    padding-bottom: 0;
+}
+.education table a p:last-child{
+    font-size: 1.3rem;
+}
+.info-about h3{
+    padding: 2rem 20px;
+}
+.info-about p{
+    margin-bottom: 1rem;
+}
+.bottom-menu {
+    float: left;
+    margin-top: 3rem;
+}
+.bottom-menu a{
+    padding: 0 30px;
+}
+.links {
+    float: right;
+    margin: 2rem 0 3rem;
+    text-align: center;
+}
+.links p{
+    margin: 0;
+}
+.main-portfolio{
+    padding-bottom: 1rem;
+}
+.portfolio{
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+}
+.portfolio img{
+    float: left;
+    margin: 1rem 10px 2.5rem;
+    border: 10px solid #aa5533;
+    box-shadow: 1px 1px 20px 2px #531500;
+}
+.big-pict {
+    display: none;
+    position: absolute;
+    top: -15rem;
+    left: 50%;
+    margin-left: -275px;
+    z-index: 10;    
+    box-shadow: 0 0 350px 200px #100;
+}
+.big-pict img{
+    margin: 0;
+    box-shadow: none;
+}
+.big-pict button{
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    color: #FFFFF0;
+    font-size: 5rem;
+    top: 0;
+    right: -60px;
+    cursor: pointer;
+    z-index: 10;
+}
+.big-pict button:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.big-pict button:active{
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+}
+.portfolio figcaption{
+    float: right;
+    width: 600px;
+    padding-right: 30px;
+}
+.portfolio h4{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 0;
+    text-decoration: underline;
+}
+.main-info li{
+    margin-bottom: 1rem
+}
+.portfolio-links{
+    clear: both;
+}
+.portfolio-links li{
+    display: inline-block;
+}
+.portfolio-links a{
+    display: block;
+    margin: 1rem;
+    padding: 1rem 15px;
+    background: #300;
+    color: #FFF8DC;
+    border-radius: 50px;
+    border-top: 1px solid #620;
+    border-bottom: 1px solid #100;
+    box-shadow:
+        inset 1px 2px 5px 2px #620,
+        inset -1px -2px 5px 2px #100;
+}
+.portfolio-links a:hover,
+.portfolio-links a:active{
+    background: #531500;
+    color: #FFF8DC;
+}
+.portfolio .img-show{
+    display: block;
+}
